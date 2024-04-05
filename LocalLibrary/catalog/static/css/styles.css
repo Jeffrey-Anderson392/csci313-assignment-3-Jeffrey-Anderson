@@ -16,3 +16,11 @@
 body {
     background: white url("images/background.png") no-repeat;
 }
+
+.disc {
+    color: red;
+}
+
+title {
+    color: crimson;
+}
