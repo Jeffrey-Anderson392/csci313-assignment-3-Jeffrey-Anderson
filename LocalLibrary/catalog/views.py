@@ -47,26 +47,6 @@ class AuthorListView(generic.ListView):
 class AuthorDetailView(generic.DetailView):
     """Generic class-based detail view for an author."""
     model = Author
-
-
-class GenreDetailView(generic.DetailView):
-    """Generic class-based detail view for a genre."""
-    model = Genre
-
-class GenreListView(generic.ListView):
-    """Generic class-based list view for a list of genres."""
-    model = Genre
-    paginate_by = 10
-
-class LanguageDetailView(generic.DetailView):
-    """Generic class-based detail view for a genre."""
-    model = Language
-
-class LanguageListView(generic.ListView):
-    """Generic class-based list view for a list of genres."""
-    model = Language
-    paginate_by = 10
-
 class BookInstanceListView(generic.ListView):
     """Generic class-based view for a list of books."""
     model = BookInstance

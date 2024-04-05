@@ -12,3 +12,12 @@
     padding: 0;
     margin: 0;
 }
+
+body {
+    background-image: url("images\library.jpg");
+    background-position: center;
+    background-size: cover;
+    /* Adjust as needed */
+    background-color: brown;
+    /* Fallback color */
+}
