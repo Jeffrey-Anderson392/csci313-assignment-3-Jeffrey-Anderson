@@ -62,7 +62,7 @@ class Book(models.Model):
         return reverse('book-detail', args=[str(self.id)])
     
 class BookInstance(models.Model):
-    """Model representing a specific copy of a book (i.e. that can be borrowed from the library)."""
+    """Model representing a specific copy of a book"""
     id = models.UUIDField(primary_key=True, default=uuid.uuid4,
                           help_text="Unique ID for this particular book across whole library")
     book = models.ForeignKey('Book', on_delete=models.RESTRICT, null=True)
@@ -73,7 +73,7 @@ class BookInstance(models.Model):
 
     @property
     def is_overdue(self):
-        """Determines if the book is overdue based on due date and current date."""
+        """Determines if the book is overdue based on due date and current date"""
         return bool(self.due_back and date.today() > self.due_back)
 
     LOAN_STATUS = (
