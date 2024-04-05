@@ -14,10 +14,5 @@
 }
 
 body {
-    background-image: url("images\library.jpg");
-    background-position: center;
-    background-size: cover;
-    /* Adjust as needed */
-    background-color: brown;
-    /* Fallback color */
+    background: white url("images/background.png") no-repeat;
 }
